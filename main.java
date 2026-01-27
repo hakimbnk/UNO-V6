@@ -56,7 +56,7 @@ import java.util.Scanner;
                          scanner.nextLine();
                         if (choice == -1) {
                             currentPlayer.drawcard(game.getDeck());
-                            System.out.println("Vous avez pioché une carte.");
+                            System.out.println("Vous avez pioche une carte.");
                             validMove = true; 
                         } else {
                             if (choice >= 0 && choice < currentPlayer.getHand().size()) {
@@ -65,14 +65,14 @@ import java.util.Scanner;
                                     playedCard = currentPlayer.playcard(choice);
                                     validMove = true;
                                 } else {
-                                    System.out.println("Cette carte ne peut pas être jouée !");
+                                    System.out.println("Cette carte ne peut pas être jouee !");
                                 }
                             } else {
                                 System.out.println("Index invalide.");
                             }
                         }
                     } else {
-                        System.out.println("Entrée invalide.");
+                        System.out.println("Entree invalide.");
                         scanner.next(); 
                     }
                 }
@@ -104,7 +104,7 @@ import java.util.Scanner;
                 }
                 // Vérification de victoire
                 if (currentPlayer.hasnocard()) {
-                    System.out.println("\n " + currentPlayer.getName() + " A GAGNÉ !");
+                    System.out.println("\n " + currentPlayer.getName() + " A GAGNEEEEEE ");
                     gameRunning = false;
                     break;
                 }
@@ -124,4 +124,5 @@ import java.util.Scanner;
     }
 
 }
+
 

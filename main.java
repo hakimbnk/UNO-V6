@@ -106,7 +106,7 @@ import java.util.Scanner;
                     break;
                 }
 
-                // Effets des cartes spéciales (inclut maintenant le changement de couleur pour WildCard)
+                // Effets des cartes spéciales
                 if (playedCard instanceof CardEffect) {
                     CardEffect p = (CardEffect) playedCard;
                     p.cardEffect(game);
@@ -119,4 +119,5 @@ import java.util.Scanner;
         System.out.println("Fin de la partie UNO.");
         scanner.close();
     }
+
 }

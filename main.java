@@ -99,6 +99,9 @@ import java.util.Scanner;
             if (playedCard != null) {
                 game.addToDiscardPile(playedCard);
 
+                if(currentPlayer.hasonecard()) {
+                    System.out.println(currentPlayer.getName() + "UNOOOOOOOOOOOOOOO");
+                }
                 // Vérification de victoire
                 if (currentPlayer.hasnocard()) {
                     System.out.println("\n " + currentPlayer.getName() + " A GAGNÉ !");
@@ -121,3 +124,4 @@ import java.util.Scanner;
     }
 
 }
+
